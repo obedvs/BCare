@@ -1,0 +1,12 @@
+ 
+.loader-hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    pointer-events: none;
+}
+
+.loader {
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+    overflow: hidden;
+  }

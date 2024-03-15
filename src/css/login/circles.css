@@ -1,0 +1,36 @@
+.circles {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.circle {
+    overflow: hidden;
+    content: "";
+    position: absolute;
+    width: 400px; /* Adjust the size of the circles as needed */
+    height: 400px; /* Adjust the size of the circles as needed */
+    border-radius: 50%; /* Makes the shape a circle */
+    background-color: #34A5AB1A; /* Set the color of the circles */
+}
+
+.circle:nth-of-type(1) {
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.circle:nth-of-type(2) {
+    bottom: 0;
+    right: 0;
+    width: calc(400px * 0.75);
+    height: calc(400px * 0.75);
+    transform: translate(35%, 35%);
+}
+
+.circle:nth-of-type(3) {
+    bottom: 0;
+    right: 0;
+    transform: translate(40%, 40%);
+}
