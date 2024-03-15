@@ -36,7 +36,7 @@ const cards = [
     name: 'Esteban Pereda',
     content: 'Frontend Developer',
     desc: `Passionate for creating compelling and user-centric designs.`,
-    linkedin: 'https://www.linkedin.com/in/esteban-pereda-soria-78396621b/',
+    linkedin: 'https://www.linkedin.com/in/esteban-pereda-78396621b/',
   },
   {
     back: BackDanna,
