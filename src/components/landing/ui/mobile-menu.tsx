@@ -7,12 +7,12 @@ import Link from 'next/link';
 export default function MobileMenu() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false)
 
-  const trigger = useRef(null)
-  const mobileNav = useRef(null)
+  const trigger = useRef<HTMLButtonElement>(null)
+  const mobileNav = useRef<HTMLDivElement>(null)
 
   // close the mobile menu on click outside
   useEffect(() => {
-    const clickHandler = ({ target }) => {
+    const clickHandler = ({ target }: { target: any }) => {
       if (!mobileNav.current || !trigger.current) return;
       if (!mobileNavOpen || mobileNav.current.contains(target) || trigger.current.contains(target)) return;
       setMobileNavOpen(false)
@@ -23,7 +23,7 @@ export default function MobileMenu() {
 
   // close the mobile menu if the esc key is pressed
   useEffect(() => {
-    const keyHandler = ({ keyCode }) => {
+    const keyHandler = ({ keyCode }: { keyCode: any }) => {
       if (!mobileNavOpen || keyCode !== 27) return;
       setMobileNavOpen(false)
     };
